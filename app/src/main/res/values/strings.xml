@@ -7,5 +7,6 @@
     -->
     <string name="hello_world">Hello Square World!</string>
     <string name="title_activity_mvvm">MvvmActivity</string>
-    <string name="mvp_introduction_text">This is the MVP Activity</string>
+    <string name="mvp_introduction_text">This is the MVP activity</string>
+    <string name="mvvm_introduction_text">This is the MVVM activity</string>
 </resources>
