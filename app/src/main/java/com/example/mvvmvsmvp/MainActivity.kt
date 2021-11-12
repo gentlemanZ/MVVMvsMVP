@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-       buttonMVVM = this.findViewById(R.id.bt_mvvm)
+        buttonMVVM = this.findViewById(R.id.bt_mvvm)
         buttonMVP = this.findViewById(R.id.bt_mvp)
 
         buttonMVVM.setOnClickListener {
