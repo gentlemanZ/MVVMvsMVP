@@ -13,7 +13,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MVVMvsMVP">
-        <activity android:name=".mvvm.MvvmActivity"></activity>
+        <activity android:name=".mvvm.MvvmActivity"/>
         <activity android:name=".mvp.MvpActivity" />
 
         <meta-data
