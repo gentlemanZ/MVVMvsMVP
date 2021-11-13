@@ -1,10 +1,8 @@
 package com.example.mvvmvsmvp.mvvm
 
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
+import androidx.lifecycle.*
 
-class MvvmViewModel : ViewModel() {
+class MvvmViewModel(lifecycleOwner: LifecycleOwner) : ViewModel() {
 
     val inputText: MutableLiveData<String> by lazy {
         MutableLiveData<String> ()
@@ -12,5 +10,12 @@ class MvvmViewModel : ViewModel() {
 
     val outputText: MutableLiveData<String> by lazy {
         MutableLiveData<String> ()
+    }
+
+    init {
+        outputText.postValue("This is the MVVM activity")
+        inputText.observe( lifecycleOwner, Observer {
+            outputText.postValue(it)
+        })
     }
 }

@@ -12,6 +12,6 @@ class MvvmActivity : AppCompatActivity() {
         setContentView(R.layout.activity_mvvm)
         val binding: ActivityMvvmBinding = DataBindingUtil.setContentView(this, R.layout.activity_mvvm)
         binding.lifecycleOwner = this
-        binding.viewmodel = MvvmViewModel()
+        binding.viewmodel = MvvmViewModel(this)
     }
 }
